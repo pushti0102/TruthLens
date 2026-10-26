@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TruthLens Verification & Provenance Schemas",
+  "description": "Standard schema definitions for TruthLens media provenance, integrity, and security results.",
+  "definitions": {
+    "ProvenanceRecord": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "asset_id",
+        "sha256",
+        "registered_at",
+        "signing_key_id",
+        "content_type"
+      ],
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "enum": ["1.0"],
+          "description": "TruthLens provenance record schema version."
+        },
+        "asset_id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Server-generated unique identifier for the registered media asset."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "Lowercase 64-character SHA-256 digest of raw media bytes."
+        },
+        "registered_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Strict ISO-8601 UTC timestamp of registration."
+        },
+        "signing_key_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identifier of the ECDSA key used to sign the record."
+        },
+        "content_type": {
+          "type": "string",
+          "enum": ["image/jpeg", "image/png", "image/webp"],
+          "description": "MIME type of verified media file."
+        },
+        "issuer_id": {
+          "type": "string",
+          "description": "Optional identifier of publishing authority."
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Optional contextual provenance metadata."
+        }
+      },
+      "additionalProperties": false
+    },
+    "IntegrityResult": {
+      "type": "object",
+      "required": ["status", "algorithm", "message"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["MATCH", "MISMATCH", "NO_REFERENCE", "INVALID_INPUT"]
+        },
+        "algorithm": {
+          "type": "string",
+          "enum": ["sha256"]
+        },
+        "current_sha256": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "reference_sha256": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes_hashed": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "message": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "SignatureVerificationResult": {
+      "type": "object",
+      "required": ["status", "key_trust_status", "algorithm", "message"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["VALID", "INVALID", "MISSING", "MALFORMED"]
+        },
+        "key_id": {
+          "type": ["string", "null"]
+        },
+        "key_trust_status": {
+          "type": "string",
+          "enum": ["TRUSTED", "REVOKED", "EXPIRED", "UNKNOWN"]
+        },
+        "algorithm": {
+          "type": "string",
+          "enum": ["ECDSA-P256-SHA256"]
+        },
+        "message": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UploadValidationResult": {
+      "type": "object",
+      "required": ["valid", "file_size_bytes"],
+      "properties": {
+        "valid": {
+          "type": "boolean"
+        },
+        "detected_format": {
+          "type": ["string", "null"],
+          "enum": ["JPEG", "PNG", "WEBP", null]
+        },
+        "file_size_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "width": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "height": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "error_code": {
+          "type": ["string", "null"]
+        },
+        "error_message": {
+          "type": ["string", "null"]
+        },
+        "asset_id": {
+          "type": ["string", "null"]
+        },
+        "sanitized_filename": {
+          "type": ["string", "null"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "EncryptedEnvelope": {
+      "type": "object",
+      "required": ["version", "algorithm", "key_id", "nonce", "ciphertext_and_tag"],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "algorithm": {
+          "type": "string",
+          "enum": ["AES-256-GCM"]
+        },
+        "key_id": {
+          "type": "string"
+        },
+        "nonce": {
+          "type": "string",
+          "description": "Base64-encoded 12-byte GCM nonce."
+        },
+        "ciphertext_and_tag": {
+          "type": "string",
+          "description": "Base64-encoded ciphertext with appended 16-byte GCM authentication tag."
+        },
+        "aad_version": {
+          "type": ["string", "null"]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

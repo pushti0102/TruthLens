@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Cryptographic Keys & Secrets (CRITICAL SECURITY)
+# NEVER commit private keys, passphrases, or local credentials to Git!
+*.pem
+*.key
+*.priv
+*.pkcs8
+private_keys/
+secrets/
+*.pfx
+*.p12
+
+# Environment Variables & Local Config
+.env
+.env.local
+.env.*.local
+*.env
+
+# Local Storage & Uploads
+uploads/
+temp_storage/
+test_output/
+*.log
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,10 @@
+# TruthLens Member 2: Cryptography & Information Security Module Requirements
+# All packages are maintained, industry-standard, and security-reviewed.
+
+cryptography>=42.0.0
+pillow>=10.0.0
+pydantic>=2.0.0
+fastapi>=0.100.0
+slowapi>=0.1.9
+pytest>=8.0.0
+httpx>=0.25.0
