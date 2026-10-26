@@ -30,7 +30,7 @@ import re
 import uuid
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import BinaryIO, Dict, Optional, Set, Tuple, Union
+from typing import Any, BinaryIO, Dict, Optional, Set, Tuple, Union
 
 from PIL import Image, UnidentifiedImageError
 
