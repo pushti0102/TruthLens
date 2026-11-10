@@ -1,0 +1,3 @@
+file_name,ground_truth,predicted_label,is_correct,confidence,score_real,score_ai_generated,ai_likelihood,inference_ms,image_path
+sample_synth.jpg,AI_GENERATED,AI_GENERATED,True,0.7934,0.2066,0.7934,moderate,1597.1,D:\projects\ISC Project\truthlens-ai\data\ai_generated\sample_synth.jpg
+sample_photo.jpg,REAL,AI_GENERATED,False,0.8209,0.1791,0.8209,high,1284.8,D:\projects\ISC Project\truthlens-ai\data\real\sample_photo.jpg
