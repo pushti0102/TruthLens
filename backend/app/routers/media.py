@@ -44,6 +44,7 @@ async def verify_media(
     request: Request,
     file: UploadFile = File(...),
     asset_id: Optional[str] = Form(None),
+    model: Optional[str] = Form("current"),
     db: Session = Depends(get_db),
     current_user: Optional[User] = Depends(get_current_user_optional),
 ):
@@ -79,6 +80,21 @@ async def verify_media(
             },
         )
 
+    # Validate model selection dynamically against registry — never silently fall back
+    try:
+        from src.detector import resolve_model_info
+        model_clean = (model or "current").strip()
+        model_info = resolve_model_info(model_clean)
+        model_key = model_info["key"]
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail={
+                "error_code": "INVALID_MODEL_SELECTION",
+                "message": str(exc),
+            },
+        )
+
     # 2. Compute SHA-256 Digest of unaltered binary bytes
     sha256_digest = CryptoService.compute_sha256(raw_bytes)
 
@@ -98,8 +114,32 @@ async def verify_media(
         target_asset_id=asset_id,
     )
 
-    # 5. Safe AI Forensic Inference (Honest readiness, no fake scores)
-    ai_dict = AIService.analyze_image(saved_path)
+    # Query prior verifications on identical SHA-256 to detect cross-model disagreements
+    prior_records = db.query(VerificationRecord).filter(
+        VerificationRecord.sha256 == sha256_digest
+    ).order_by(VerificationRecord.created_at.desc()).all()
+
+    prior_predictions = []
+    for pr in prior_records:
+        if pr.ai_status == "SUCCESS" and pr.ai_label:
+            p_details = {}
+            if pr.details_json:
+                try:
+                    p_details = json.loads(pr.details_json).get("ai", {})
+                except Exception:
+                    pass
+            prior_predictions.append({
+                "label": pr.ai_label,
+                "model_id": p_details.get("model_id") or "prior model",
+                "confidence": pr.ai_confidence,
+            })
+
+    # 5. Safe AI Forensic Inference (Honest readiness, explicit model routing)
+    ai_dict = AIService.analyze_image(
+        saved_path,
+        model=model_key,
+        prior_predictions=prior_predictions,
+    )
 
     # 6. Multi-Signal Transparent Trust Assessment
     trust_dict = TrustAssessmentEngine.evaluate(
@@ -210,6 +250,26 @@ def get_verification_history(
         )
         for r in records
     ]
+
+
+@router.get("/models")
+@router.get("/models/available")
+def get_available_models():
+    """Return available AI detection models dynamically from the model registry."""
+    from src.detector import MODEL_REGISTRY
+    models = []
+    for key, info in MODEL_REGISTRY.items():
+        models.append({
+            "key": key,
+            "model_id": info["model_id"],
+            "name": info.get("name"),
+            "short_name": info.get("short_name", info.get("name")),
+            "architecture": info.get("architecture"),
+            "architecture_name": info.get("architecture_name", info.get("architecture")),
+            "description": info.get("description"),
+            "badge": info.get("badge", ""),
+        })
+    return models
 
 
 @router.get("/{verification_id}", response_model=VerificationReport)

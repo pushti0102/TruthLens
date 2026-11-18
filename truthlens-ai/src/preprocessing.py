@@ -150,35 +150,97 @@ def get_image_info(image: Image.Image) -> dict:
 
 def check_document_characteristics(image: Image.Image) -> dict:
     """
-    Inspect image geometry to identify document or ID card characteristics.
+    Inspect image geometry and visual surface evidence to determine if the image
+    is likely a scanned document, ID card, or certificate.
 
-    Standard ID cards (ISO/IEC 7810 ID-1, such as Indian PAN cards, Aadhaar cards,
-    driver licenses, credit cards) have a nominal aspect ratio of 1.586 (or 0.630 in portrait).
-    Standard document formats (A4/Letter) have aspect ratios around 1.29 - 1.41 (or 0.70 - 0.77).
+    Aspect ratio alone is NEVER used as definitive proof because standard camera
+    and smartphone photos commonly share similar aspect ratios (e.g., 4:3 = 1.333,
+    3:2 = 1.500, 16:9 = 1.778). Instead, geometry is combined with visual/color
+    evidence (background paper uniformity, low color saturation).
+
+    If evidence is insufficient or conflicting, the document classification
+    is reported as inconclusive (False).
 
     Returns
     -------
     dict with keys:
-        aspect_ratio             (float): width / height
-        is_likely_document       (bool) : True if aspect ratio matches document / ID card
-        document_hint            (str or None): Descriptive label if document-like
+        aspect_ratio       (float): width / height
+        is_likely_document (bool) : True if visual and geometric evidence confirms document
+        document_hint      (str or None): Descriptive label if document-like, else None
     """
     w, h = image.size
     aspect_ratio = round(w / float(h), 4)
 
-    is_id_card = (1.42 <= aspect_ratio <= 1.75) or (0.57 <= aspect_ratio <= 0.70)
-    is_doc_page = (1.20 <= aspect_ratio < 1.42) or (0.70 < aspect_ratio <= 0.83)
+    # Standard photographic aspect ratios (within 3% tolerance)
+    standard_photo_ratios = [
+        4 / 3, 3 / 4,
+        3 / 2, 2 / 3,
+        16 / 9, 9 / 16,
+        1.0,
+    ]
+    is_standard_photo_aspect = any(
+        abs(aspect_ratio - r) / r < 0.03 for r in standard_photo_ratios
+    )
 
-    if is_id_card:
-        hint = "Identity card / credential format (e.g. PAN card, ID-1 card, driving license)"
-    elif is_doc_page:
-        hint = "Document / certificate page format (e.g. A4 / Letter scan)"
+    # Sample a small thumbnail to evaluate visual/color layout (fast, < 5ms)
+    thumb = image.resize((128, 128)).convert("RGB")
+    try:
+        raw_data = thumb.get_flattened_data() if hasattr(thumb, "get_flattened_data") else list(thumb.getdata())
+    except Exception:
+        raw_data = list(thumb.getdata())
+
+    total_pixels = 128 * 128
+    light_paper_pixels = 0
+    total_sat = 0.0
+
+    if isinstance(raw_data, (bytes, bytearray)) or (raw_data and isinstance(raw_data[0], int)):
+        for i in range(0, len(raw_data) - 2, 3):
+            r, g, b = raw_data[i], raw_data[i + 1], raw_data[i + 2]
+            max_c = max(r, g, b)
+            min_c = min(r, g, b)
+            sat = (max_c - min_c) / max_c if max_c > 0 else 0.0
+            total_sat += sat
+            if min_c > 200 and sat < 0.15:
+                light_paper_pixels += 1
     else:
+        for r, g, b in raw_data:
+            max_c = max(r, g, b)
+            min_c = min(r, g, b)
+            sat = (max_c - min_c) / max_c if max_c > 0 else 0.0
+            total_sat += sat
+            if min_c > 200 and sat < 0.15:
+                light_paper_pixels += 1
+
+    paper_ratio = light_paper_pixels / total_pixels
+    avg_sat = total_sat / total_pixels
+
+    # ID-1 aspect ratio is approximately 1.586 (width/height for cards like PAN, Aadhaar, driving license)
+    is_id_card_ratio = (1.52 <= aspect_ratio <= 1.66) or (0.60 <= aspect_ratio <= 0.66)
+
+    is_document = False
+    hint = None
+
+    # Decision requiring visual paper evidence combined with geometry
+    if paper_ratio >= 0.35 and is_id_card_ratio:
+        # Uniform light card background with specific ID-1 geometry
+        is_document = True
+        hint = "Identity card / credential format (e.g. PAN card, ID-1 card, driving license)"
+    elif paper_ratio >= 0.45 and avg_sat < 0.18:
+        # Strong visual document evidence (predominantly light/white paper with low saturation text)
+        is_document = True
+        hint = "Document / certificate page format (e.g. A4 / Letter scan)"
+    elif is_standard_photo_aspect and paper_ratio < 0.35:
+        # Standard camera photo with natural color distribution
+        is_document = False
+        hint = None
+    else:
+        # Ambiguous geometry or low visual certainty -> report inconclusive (not flagged as document)
+        is_document = False
         hint = None
 
     return {
         "aspect_ratio": aspect_ratio,
-        "is_likely_document": is_id_card or is_doc_page,
+        "is_likely_document": is_document,
         "document_hint": hint,
     }
 

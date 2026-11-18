@@ -63,6 +63,12 @@ def get_dashboard_summary(db: Session = Depends(get_db)):
         for r in recent_recs
     ]
 
+    try:
+        from src.detector import resolve_model_info, DEFAULT_MODEL_KEY
+        resolved_model_id = resolve_model_info(DEFAULT_MODEL_KEY)["model_id"]
+    except Exception:
+        resolved_model_id = "ai_detection_model"
+
     return DashboardSummary(
         total_verifications=total_verifications,
         ai_analyses_completed=ai_analyses_completed,
@@ -70,7 +76,7 @@ def get_dashboard_summary(db: Session = Depends(get_db)):
         integrity_mismatches=integrity_mismatches,
         unregistered_count=unregistered_count,
         model_ready=ai_ready,
-        model_id="dima806/ai_vs_real_image_detection",
+        model_id=resolved_model_id,
         crypto_ready=crypto_ready,
         active_key_id=crypto_manager.active_key_id,
         recent_activity=recent_activity,

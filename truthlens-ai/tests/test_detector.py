@@ -261,9 +261,9 @@ class TestRegistryAndSmaug:
     def test_smaug_never_falls_back_to_vit_on_failure(self):
         """When Smaug fails to load, it must raise ModelNotAvailableError and not use ViT."""
         with patch("src.detector.pipeline", None):
-            with pytest.raises(ModelNotAvailableError) as exc_info:
-                # Force unmocked load of Smaug
-                TruthLensDetector(model_id="smaug")
-            # The error must specifically describe Smaug failure
-            assert "Smaug model 'abacusai/Smaug-AI-Image-Detector'" in str(exc_info.value)
+            with patch("sentence_transformers.SentenceTransformer", side_effect=RuntimeError("Simulated weight load failure")):
+                with pytest.raises(ModelNotAvailableError) as exc_info:
+                    TruthLensDetector(model_id="smaug")
+                # The error must specifically describe Smaug failure
+                assert "Smaug model 'abacusai/Smaug-AI-Image-Detector'" in str(exc_info.value)
 

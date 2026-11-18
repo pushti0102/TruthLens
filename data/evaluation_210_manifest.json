@@ -1,0 +1,3362 @@
+[
+  {
+    "id": "EVAL-001",
+    "filename": "real_001_IMG_20231119_172045.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_001_IMG_20231119_172045.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      3264,
+      1836
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-002",
+    "filename": "real_002_DSCN0047.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_002_DSCN0047.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chotti birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-003",
+    "filename": "real_003_AquaLifeV_20181007_150133.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_003_AquaLifeV_20181007_150133.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Hasimara)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2124,
+      3776
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-004",
+    "filename": "real_004_DSCN0113.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_004_DSCN0113.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-005",
+    "filename": "real_005_DSCN1288.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_005_DSCN1288.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Aaru birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-006",
+    "filename": "real_006_AquaLifeV_20180518_125057.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_006_AquaLifeV_20180518_125057.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (mumbai)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      3776,
+      2124
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-007",
+    "filename": "real_007_AquaLifeV_20180518_140502_1.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_007_AquaLifeV_20180518_140502_1.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (mumbai)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      3776,
+      2124
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-008",
+    "filename": "real_008_IMG_20231119_170350.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_008_IMG_20231119_170350.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      4000,
+      2248
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-009",
+    "filename": "real_009_108182.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_009_108182.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (VSN TRIP)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      450,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-010",
+    "filename": "real_010_DSCN0014.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_010_DSCN0014.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Flower park)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-011",
+    "filename": "real_011_IMG_20231119_174950.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_011_IMG_20231119_174950.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      4000,
+      2248
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-012",
+    "filename": "real_012_DSCN0112.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_012_DSCN0112.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-013",
+    "filename": "real_013_AquaLifeV_20170309_125754.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_013_AquaLifeV_20170309_125754.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Delhi)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2448,
+      3264
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-014",
+    "filename": "real_014_DSCN0061.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_014_DSCN0061.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-015",
+    "filename": "real_015_103298.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_015_103298.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chotti birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      480,
+      640
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-016",
+    "filename": "real_016_AquaLifeV_20180521_125622.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_016_AquaLifeV_20180521_125622.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (mumbai)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2124,
+      3776
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-017",
+    "filename": "real_017_DSCN0069.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_017_DSCN0069.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-018",
+    "filename": "real_018_DSCN0045.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_018_DSCN0045.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Flower park)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-019",
+    "filename": "real_019_IMG_20221108_194022.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_019_IMG_20221108_194022.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (riya)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      4224,
+      3136
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-020",
+    "filename": "real_020_AquaLifeV_20170309_130031.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_020_AquaLifeV_20170309_130031.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Delhi)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2448,
+      3264
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-021",
+    "filename": "real_021_AquaLifeV_20180517_183224.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_021_AquaLifeV_20180517_183224.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (mumbai)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-022",
+    "filename": "real_022_DSCN0011.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_022_DSCN0011.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chotti birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-023",
+    "filename": "real_023_AquaLifeV_20180826_114050_1.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_023_AquaLifeV_20180826_114050_1.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Hasimara)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      3776,
+      2124
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-024",
+    "filename": "real_024_DSCN1294.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_024_DSCN1294.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Aaru birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-025",
+    "filename": "real_025_AquaLifeV_20180524_115833_1.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_025_AquaLifeV_20180524_115833_1.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (mumbai)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2124,
+      3776
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-026",
+    "filename": "real_026_IMG_20221108_190610.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_026_IMG_20221108_190610.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (riya)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      4000,
+      2248
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-027",
+    "filename": "real_027_DSCN0058.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_027_DSCN0058.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chotti birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-028",
+    "filename": "real_028_AquaLifeV_20180518_103646.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_028_AquaLifeV_20180518_103646.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (mumbai)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2124,
+      3776
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-029",
+    "filename": "real_029_DSCN1259.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_029_DSCN1259.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Aaru birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-030",
+    "filename": "real_030_DSCN1291.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_030_DSCN1291.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Aaru birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-031",
+    "filename": "real_031_DSCN0059.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_031_DSCN0059.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Flower park)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-032",
+    "filename": "real_032_AquaLifeV_20170309_120729_1.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_032_AquaLifeV_20170309_120729_1.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Delhi)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      3264,
+      2448
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-033",
+    "filename": "real_033_DSCN0054.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_033_DSCN0054.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chotti birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-034",
+    "filename": "real_034_IMG_20221030_171218.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_034_IMG_20221030_171218.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2022)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      4000,
+      2248
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-035",
+    "filename": "real_035_IMG_20231119_172413.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_035_IMG_20231119_172413.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      3264,
+      1836
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-036",
+    "filename": "real_036_DSCN0089.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_036_DSCN0089.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-037",
+    "filename": "real_037_103301.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_037_103301.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chotti birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      480,
+      640
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-038",
+    "filename": "real_038_DSCN0038.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_038_DSCN0038.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chotti birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-039",
+    "filename": "real_039_AquaLifeV_20180524_143852.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_039_AquaLifeV_20180524_143852.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (mumbai)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2124,
+      3776
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-040",
+    "filename": "real_040_DSCN1023.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_040_DSCN1023.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja2021)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-041",
+    "filename": "real_041_1715080774244.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_041_1715080774244.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja2021)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      575,
+      1280
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-042",
+    "filename": "real_042_108197.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_042_108197.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (VSN TRIP)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      450,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-043",
+    "filename": "real_043_AquaLifeV_20180524_115251_1.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_043_AquaLifeV_20180524_115251_1.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (mumbai)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2124,
+      3776
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-044",
+    "filename": "real_044_AquaLifeV_20181018_080046_1.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_044_AquaLifeV_20181018_080046_1.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Hasimara)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2124,
+      3776
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-045",
+    "filename": "real_045_IMG_20221108_190131.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_045_IMG_20221108_190131.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (riya)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      4000,
+      2248
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-046",
+    "filename": "real_046_DSCN0044.JPG",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_046_DSCN0044.JPG",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (Flower park)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      5152,
+      3864
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-047",
+    "filename": "real_047_103574.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_047_103574.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chotti birthday)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      480,
+      640
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-048",
+    "filename": "real_048_IMG_20221108_190210.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_048_IMG_20221108_190210.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (riya)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-049",
+    "filename": "real_049_IMG_20231120_051150.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_049_IMG_20231120_051150.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (chaat puja 2023)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      4000,
+      2248
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-050",
+    "filename": "real_050_AquaLifeV_20180615_094337.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\real_photographs\\real_050_AquaLifeV_20180615_094337.jpg",
+    "category": "real_photograph",
+    "ground_truth": "REAL",
+    "source": "Smartphone Camera (mumbai)",
+    "generator": "N/A (Physical Optical Sensor)",
+    "resolution": [
+      2124,
+      3776
+    ],
+    "format": "JPEG",
+    "compression": "Standard Camera JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-051",
+    "filename": "ai_photo_051.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_051.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-052",
+    "filename": "ai_photo_052.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_052.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-053",
+    "filename": "ai_photo_053.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_053.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-054",
+    "filename": "ai_photo_054.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_054.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-055",
+    "filename": "ai_photo_055.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_055.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-056",
+    "filename": "ai_photo_056.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_056.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-057",
+    "filename": "ai_photo_057.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_057.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-058",
+    "filename": "ai_photo_058.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_058.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-059",
+    "filename": "ai_photo_059.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_059.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-060",
+    "filename": "ai_photo_060.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_060.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-061",
+    "filename": "ai_photo_061.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_061.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-062",
+    "filename": "ai_photo_062.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_062.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-063",
+    "filename": "ai_photo_063.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_063.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-064",
+    "filename": "ai_photo_064.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_064.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-065",
+    "filename": "ai_photo_065.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_065.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-066",
+    "filename": "ai_photo_066.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_066.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-067",
+    "filename": "ai_photo_067.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_067.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-068",
+    "filename": "ai_photo_068.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_068.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-069",
+    "filename": "ai_photo_069.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_069.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-070",
+    "filename": "ai_photo_070.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_070.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-071",
+    "filename": "ai_photo_071.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_071.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-072",
+    "filename": "ai_photo_072.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_072.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-073",
+    "filename": "ai_photo_073.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_073.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-074",
+    "filename": "ai_photo_074.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_074.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-075",
+    "filename": "ai_photo_075.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_075.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-076",
+    "filename": "ai_photo_076.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_076.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-077",
+    "filename": "ai_photo_077.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_077.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-078",
+    "filename": "ai_photo_078.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_078.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-079",
+    "filename": "ai_photo_079.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_079.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-080",
+    "filename": "ai_photo_080.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_080.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-081",
+    "filename": "ai_photo_081.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_081.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-082",
+    "filename": "ai_photo_082.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_082.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-083",
+    "filename": "ai_photo_083.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_083.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-084",
+    "filename": "ai_photo_084.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_084.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-085",
+    "filename": "ai_photo_085.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_085.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-086",
+    "filename": "ai_photo_086.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_086.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-087",
+    "filename": "ai_photo_087.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_087.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-088",
+    "filename": "ai_photo_088.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_088.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-089",
+    "filename": "ai_photo_089.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_089.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-090",
+    "filename": "ai_photo_090.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_090.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-091",
+    "filename": "ai_photo_091.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_091.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-092",
+    "filename": "ai_photo_092.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_092.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-093",
+    "filename": "ai_photo_093.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_093.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-094",
+    "filename": "ai_photo_094.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_094.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-095",
+    "filename": "ai_photo_095.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_095.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-096",
+    "filename": "ai_photo_096.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_096.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-097",
+    "filename": "ai_photo_097.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_097.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-098",
+    "filename": "ai_photo_098.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_098.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-099",
+    "filename": "ai_photo_099.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_099.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-100",
+    "filename": "ai_photo_100.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\ai_generated_photographs\\ai_photo_100.jpg",
+    "category": "ai_generated_photograph",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Evaluation Split",
+    "generator": "Stable Diffusion v1.4",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG (32x32 upscaled / diffusion)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-101",
+    "filename": "ai_art_101.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_101.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-102",
+    "filename": "ai_art_102.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_102.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-103",
+    "filename": "ai_art_103.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_103.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-104",
+    "filename": "ai_art_104.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_104.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-105",
+    "filename": "ai_art_105.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_105.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-106",
+    "filename": "ai_art_106.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_106.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-107",
+    "filename": "ai_art_107.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_107.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-108",
+    "filename": "ai_art_108.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_108.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-109",
+    "filename": "ai_art_109.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_109.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-110",
+    "filename": "ai_art_110.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_110.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-111",
+    "filename": "ai_art_111.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_111.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-112",
+    "filename": "ai_art_112.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_112.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-113",
+    "filename": "ai_art_113.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_113.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-114",
+    "filename": "ai_art_114.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_114.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-115",
+    "filename": "ai_art_115.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_115.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-116",
+    "filename": "ai_art_116.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_116.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-117",
+    "filename": "ai_art_117.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_117.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-118",
+    "filename": "ai_art_118.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_118.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-119",
+    "filename": "ai_art_119.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_119.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-120",
+    "filename": "ai_art_120.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_120.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-121",
+    "filename": "ai_art_121.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_121.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-122",
+    "filename": "ai_art_122.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_122.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-123",
+    "filename": "ai_art_123.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_123.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-124",
+    "filename": "ai_art_124.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_124.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-125",
+    "filename": "ai_art_125.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_125.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-126",
+    "filename": "ai_art_126.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_126.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-127",
+    "filename": "ai_art_127.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_127.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-128",
+    "filename": "ai_art_128.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_128.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-129",
+    "filename": "ai_art_129.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_129.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-130",
+    "filename": "ai_art_130.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_130.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-131",
+    "filename": "ai_art_131.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_131.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-132",
+    "filename": "ai_art_132.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_132.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-133",
+    "filename": "ai_art_133.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_133.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-134",
+    "filename": "ai_art_134.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_134.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-135",
+    "filename": "ai_art_135.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_135.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-136",
+    "filename": "ai_art_136.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_136.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-137",
+    "filename": "ai_art_137.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_137.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-138",
+    "filename": "ai_art_138.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_138.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-139",
+    "filename": "ai_art_139.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_139.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-140",
+    "filename": "ai_art_140.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_140.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-141",
+    "filename": "ai_art_141.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_141.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-142",
+    "filename": "ai_art_142.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_142.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-143",
+    "filename": "ai_art_143.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_143.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-144",
+    "filename": "ai_art_144.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_144.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-145",
+    "filename": "ai_art_145.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_145.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-146",
+    "filename": "ai_art_146.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_146.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-147",
+    "filename": "ai_art_147.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_147.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-148",
+    "filename": "ai_art_148.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_148.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-149",
+    "filename": "ai_art_149.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_149.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-150",
+    "filename": "ai_art_150.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\artistic_synthetic\\ai_art_150.jpg",
+    "category": "artistic_synthetic",
+    "ground_truth": "AI_GENERATED",
+    "source": "CIFAKE Artistic / Render Evaluation Split",
+    "generator": "Stable Diffusion v1.4 (Stylized)",
+    "resolution": [
+      32,
+      32
+    ],
+    "format": "JPEG",
+    "compression": "Standard JPEG",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-151",
+    "filename": "tampered_151_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_151_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2023) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-152",
+    "filename": "tampered_152_resample_blur.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_152_resample_blur.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Delhi) + Tamper Pipeline",
+    "generator": "Forensic Tampering (resample_blur)",
+    "resolution": [
+      1200,
+      1600
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q75",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-153",
+    "filename": "tampered_153_heavy_compression.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_153_heavy_compression.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chotti birthday) + Tamper Pipeline",
+    "generator": "Forensic Tampering (heavy_compression)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q15 (Severe Lossy)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-154",
+    "filename": "tampered_154_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_154_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Aaru birthday) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-155",
+    "filename": "tampered_155_resample_blur.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_155_resample_blur.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Delhi) + Tamper Pipeline",
+    "generator": "Forensic Tampering (resample_blur)",
+    "resolution": [
+      1200,
+      1600
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q75",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-156",
+    "filename": "tampered_156_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_156_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Aaru birthday) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-157",
+    "filename": "tampered_157_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_157_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Flower park) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-158",
+    "filename": "tampered_158_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_158_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chotti birthday) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-159",
+    "filename": "tampered_159_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_159_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja2021) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-160",
+    "filename": "tampered_160_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_160_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Flower park) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-161",
+    "filename": "tampered_161_resample_blur.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_161_resample_blur.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chotti birthday) + Tamper Pipeline",
+    "generator": "Forensic Tampering (resample_blur)",
+    "resolution": [
+      480,
+      640
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q75",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-162",
+    "filename": "tampered_162_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_162_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2023) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1600,
+      900
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-163",
+    "filename": "tampered_163_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_163_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2023) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-164",
+    "filename": "tampered_164_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_164_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2023) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-165",
+    "filename": "tampered_165_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_165_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Aaru birthday) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-166",
+    "filename": "tampered_166_heavy_compression.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_166_heavy_compression.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2022) + Tamper Pipeline",
+    "generator": "Forensic Tampering (heavy_compression)",
+    "resolution": [
+      1600,
+      899
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q15 (Severe Lossy)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-167",
+    "filename": "tampered_167_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_167_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Flower park) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-168",
+    "filename": "tampered_168_heavy_compression.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_168_heavy_compression.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2022) + Tamper Pipeline",
+    "generator": "Forensic Tampering (heavy_compression)",
+    "resolution": [
+      1600,
+      899
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q15 (Severe Lossy)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-169",
+    "filename": "tampered_169_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_169_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Aaru birthday) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-170",
+    "filename": "tampered_170_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_170_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Flower park) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-171",
+    "filename": "tampered_171_resample_blur.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_171_resample_blur.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Delhi) + Tamper Pipeline",
+    "generator": "Forensic Tampering (resample_blur)",
+    "resolution": [
+      1200,
+      1600
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q75",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-172",
+    "filename": "tampered_172_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_172_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2022) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1600,
+      899
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-173",
+    "filename": "tampered_173_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_173_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (riya) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1600,
+      899
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-174",
+    "filename": "tampered_174_heavy_compression.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_174_heavy_compression.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Aaru birthday) + Tamper Pipeline",
+    "generator": "Forensic Tampering (heavy_compression)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q15 (Severe Lossy)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-175",
+    "filename": "tampered_175_heavy_compression.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_175_heavy_compression.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (mumbai) + Tamper Pipeline",
+    "generator": "Forensic Tampering (heavy_compression)",
+    "resolution": [
+      900,
+      1600
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q15 (Severe Lossy)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-176",
+    "filename": "tampered_176_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_176_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2023) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1600,
+      899
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-177",
+    "filename": "tampered_177_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_177_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja2021) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-178",
+    "filename": "tampered_178_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_178_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2023) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-179",
+    "filename": "tampered_179_resample_blur.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_179_resample_blur.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (mumbai) + Tamper Pipeline",
+    "generator": "Forensic Tampering (resample_blur)",
+    "resolution": [
+      900,
+      1600
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q75",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-180",
+    "filename": "tampered_180_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_180_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2023) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-181",
+    "filename": "tampered_181_copy_move.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_181_copy_move.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Delhi) + Tamper Pipeline",
+    "generator": "Forensic Tampering (copy_move)",
+    "resolution": [
+      1200,
+      1600
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q85",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-182",
+    "filename": "tampered_182_splicing.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_182_splicing.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (mumbai) + Tamper Pipeline",
+    "generator": "Forensic Tampering (splicing)",
+    "resolution": [
+      1600,
+      900
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q80",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-183",
+    "filename": "tampered_183_heavy_compression.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_183_heavy_compression.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja 2022) + Tamper Pipeline",
+    "generator": "Forensic Tampering (heavy_compression)",
+    "resolution": [
+      1600,
+      900
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q15 (Severe Lossy)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-184",
+    "filename": "tampered_184_resample_blur.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_184_resample_blur.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (Flower park) + Tamper Pipeline",
+    "generator": "Forensic Tampering (resample_blur)",
+    "resolution": [
+      1599,
+      1200
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q75",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-185",
+    "filename": "tampered_185_heavy_compression.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\manipulated_tampered\\tampered_185_heavy_compression.jpg",
+    "category": "manipulated_tampered",
+    "ground_truth": "MANIPULATED",
+    "source": "Real Photo (chaat puja2021) + Tamper Pipeline",
+    "generator": "Forensic Tampering (heavy_compression)",
+    "resolution": [
+      360,
+      640
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q15 (Severe Lossy)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-186",
+    "filename": "doc_186_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_186_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      600,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-187",
+    "filename": "doc_187_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_187_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      856,
+      540
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-188",
+    "filename": "doc_188_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_188_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      800,
+      1100
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-189",
+    "filename": "doc_189_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_189_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      856,
+      540
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-190",
+    "filename": "doc_190_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_190_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      600,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-191",
+    "filename": "doc_191_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_191_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      800,
+      1100
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-192",
+    "filename": "doc_192_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_192_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      600,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-193",
+    "filename": "doc_193_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_193_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      856,
+      540
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-194",
+    "filename": "doc_194_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_194_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      800,
+      1100
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-195",
+    "filename": "doc_195_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_195_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      856,
+      540
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-196",
+    "filename": "doc_196_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_196_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      600,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-197",
+    "filename": "doc_197_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_197_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      800,
+      1100
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-198",
+    "filename": "doc_198_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_198_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      600,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-199",
+    "filename": "doc_199_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_199_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      856,
+      540
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-200",
+    "filename": "doc_200_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_200_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      800,
+      1100
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-201",
+    "filename": "doc_201_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_201_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      856,
+      540
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-202",
+    "filename": "doc_202_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_202_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      600,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-203",
+    "filename": "doc_203_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_203_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      800,
+      1100
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-204",
+    "filename": "doc_204_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_204_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      600,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-205",
+    "filename": "doc_205_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_205_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      856,
+      540
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-206",
+    "filename": "doc_206_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_206_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      800,
+      1100
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-207",
+    "filename": "doc_207_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_207_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      856,
+      540
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-208",
+    "filename": "doc_208_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_208_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      600,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-209",
+    "filename": "doc_209_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_209_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      800,
+      1100
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  },
+  {
+    "id": "EVAL-210",
+    "filename": "doc_210_scan.jpg",
+    "filepath": "D:\\projects\\ISC Project\\data\\evaluation_210\\document_scans\\doc_210_scan.jpg",
+    "category": "document_scan",
+    "ground_truth": "DOCUMENT",
+    "source": "Procedural ID/Document Layout Engine",
+    "generator": "Document Layout Generator",
+    "resolution": [
+      600,
+      800
+    ],
+    "format": "JPEG",
+    "compression": "JPEG Q90 (Synthesized Document Layout)",
+    "split": "independent_eval"
+  }
+]

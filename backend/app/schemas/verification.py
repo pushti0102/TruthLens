@@ -22,13 +22,19 @@ class SignatureDetail(BaseModel):
 class AIDetail(BaseModel):
     status: str  # SUCCESS, UNAVAILABLE, ERROR
     label: Optional[str] = None  # REAL, AI_GENERATED
+    outcome: Optional[str] = None  # REAL, AI_GENERATED, INCONCLUSIVE
     confidence: Optional[float] = None
     raw_scores: Optional[List[Dict[str, Any]]] = None
     model_id: Optional[str] = None
+    model_name: Optional[str] = None
+    architecture: Optional[str] = None
     inference_ms: Optional[float] = None
     ai_likelihood: Optional[str] = None  # high, moderate, low, inconclusive
     warning: Optional[str] = None
+    calibration_note: Optional[str] = None
     document_domain_warning: Optional[str] = None
+    model_disagreement: Optional[bool] = None
+    disagreement_details: Optional[str] = None
     message: Optional[str] = None
 
 

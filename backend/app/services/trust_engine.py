@@ -81,9 +81,42 @@ class TrustAssessmentEngine:
 
         # ── Case 4: Unregistered / No Reference Baseline ────────────────────
         # (integ_status == "NO_REFERENCE")
+        model_name = ai.get("model_name") or ai.get("architecture") or "AI Forensic Detector"
+
         if ai_status == "SUCCESS":
             confidence_pct = round((ai.get("confidence") or 0.0) * 100, 1)
             doc_warning = ai.get("document_domain_warning")
+
+            # Check for inter-model disagreement across prior runs on the same file
+            if ai.get("model_disagreement"):
+                return {
+                    "status": "INCONCLUSIVE",
+                    "score": 50,
+                    "badge": "Inconclusive (Model Disagreement)",
+                    "badge_color": "slate",
+                    "explanation": (
+                        f"Forensic AI models disagree on this media. {ai.get('disagreement_details', '')} "
+                        "When different detection architectures reach contradictory conclusions on an unregistered file, "
+                        "probabilistic scores cannot be considered definitive. Cryptographic provenance is unavailable, "
+                        "and the overall assessment is INCONCLUSIVE."
+                    ),
+                    "signals_summary": {"integrity": "NO_BASELINE", "signature": "MISSING", "ai_risk": "MODEL_DISAGREEMENT"},
+                }
+
+            if ai_likelihood == "inconclusive":
+                return {
+                    "status": "INCONCLUSIVE",
+                    "score": 50,
+                    "badge": "Inconclusive (Uncertain AI Signal)",
+                    "badge_color": "slate",
+                    "explanation": (
+                        f"No registered cryptographic provenance baseline found. The {model_name} prediction ({confidence_pct}%) "
+                        "falls within an ambiguous decision boundary or reflects insufficient evidence. Raw softmax scores "
+                        "are uncalibrated heuristics and must not be treated as posterior probabilities. "
+                        "Missing provenance is reported as unavailable, not evidence of manipulation."
+                    ),
+                    "signals_summary": {"integrity": "NO_BASELINE", "signature": "MISSING", "ai_risk": "INCONCLUSIVE"},
+                }
 
             if ai_label == "REAL":
                 return {
@@ -92,10 +125,11 @@ class TrustAssessmentEngine:
                     "badge": "Visual Cues Photographic (Unregistered)",
                     "badge_color": "blue",
                     "explanation": (
-                        f"No cryptographic provenance record registered. The Vision Transformer detector found "
-                        f"authentic photographic characteristics ({confidence_pct}% confidence). "
+                        f"No cryptographic provenance record registered. The {model_name} found "
+                        f"photographic characteristics ({confidence_pct}% confidence). "
                         "Because the file has not been cryptographically signed by a registered publisher, "
-                        "origin non-repudiation and chain of custody cannot be mathematically guaranteed."
+                        "provenance is unavailable and origin chain of custody cannot be mathematically guaranteed. "
+                        "Unregistered status is not proof of fraud."
                     ),
                     "signals_summary": {"integrity": "NO_BASELINE", "signature": "MISSING", "ai_risk": "LOW"},
                 }
@@ -105,12 +139,12 @@ class TrustAssessmentEngine:
                 return {
                     "status": "INCONCLUSIVE",
                     "score": 50,
-                    "badge": "Inconclusive (Domain / Geometry Advisory)",
+                    "badge": "Inconclusive (Document Advisory)",
                     "badge_color": "slate",
                     "explanation": (
-                        f"No registered cryptographic baseline found. Although the Vision Transformer indicated AI likelihood ({confidence_pct}%), "
-                        "the image dimensions trigger a document/camera format advisory where CIFAKE-trained models frequently produce "
-                        "false-positive detections. Rely on cryptographic provenance registration for definitive verification."
+                        f"No registered cryptographic baseline found. Although the {model_name} indicated AI likelihood ({confidence_pct}%), "
+                        "the image exhibits document or credential characteristics where models have higher false-positive risk. "
+                        "Missing provenance is unavailable; independent cryptographic registration is required for definitive verification."
                     ),
                     "signals_summary": {"integrity": "NO_BASELINE", "signature": "MISSING", "ai_risk": "INCONCLUSIVE_DOMAIN"},
                 }
@@ -123,7 +157,8 @@ class TrustAssessmentEngine:
                     "badge_color": "amber",
                     "explanation": (
                         f"No registered cryptographic baseline found. AI visual forensics indicates a high "
-                        f"likelihood of synthetic or AI-generated imagery ({confidence_pct}% confidence). Evaluate with caution."
+                        f"likelihood of synthetic or AI-generated imagery ({confidence_pct}% confidence). "
+                        "Note: Raw AI detection scores are pattern heuristics and do not provide legal proof of origin."
                     ),
                     "signals_summary": {"integrity": "NO_BASELINE", "signature": "MISSING", "ai_risk": "HIGH"},
                 }
@@ -135,7 +170,7 @@ class TrustAssessmentEngine:
                     "badge_color": "amber",
                     "explanation": (
                         f"No registered cryptographic baseline found. AI visual forensics detected moderate "
-                        f"synthetic patterns ({confidence_pct}% confidence)."
+                        f"synthetic patterns ({confidence_pct}% confidence). Missing provenance is reported as unavailable."
                     ),
                     "signals_summary": {"integrity": "NO_BASELINE", "signature": "MISSING", "ai_risk": "MODERATE"},
                 }
@@ -144,12 +179,12 @@ class TrustAssessmentEngine:
         return {
             "status": "INCONCLUSIVE",
             "score": 50,
-            "badge": "Unregistered (AI Offline)",
+            "badge": "Unregistered (Provenance Unavailable)",
             "badge_color": "slate",
             "explanation": (
                 "No registered cryptographic reference baseline was found in the database. "
-                "AI visual forensics is currently offline or unconfigured. Cryptographic integrity "
-                "cannot be proven without an established baseline."
+                "AI visual forensics is currently offline or unconfigured. "
+                "Missing provenance is reported as unavailable, not automatically fraudulent."
             ),
             "signals_summary": {"integrity": "NO_BASELINE", "signature": "MISSING", "ai_risk": "UNKNOWN"},
         }

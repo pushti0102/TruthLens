@@ -82,18 +82,28 @@ DEFAULT_MODEL_KEY = "current"
 
 MODEL_REGISTRY = {
     "current": {
+        "key": "current",
         "model_id": MODEL_ID,
         "name": "ViT AI vs Real Image Detector",
+        "short_name": "ViT Detector",
         "architecture": "vit",
+        "architecture_name": "Vision Transformer (ViT-Base-Patch16-224)",
         "hf_repo": "https://huggingface.co/dima806/ai_vs_real_image_detection",
         "description": "Vision Transformer (ViT-base-patch16-224) fine-tuned for binary AI vs Real classification.",
+        "domain_note": "Model was trained on natural and artistic imagery (CIFAKE dataset). It has not been validated on ID cards, credentials, or document scans.",
+        "badge": "Default",
     },
     "smaug": {
+        "key": "smaug",
         "model_id": SMAUG_MODEL_ID,
         "name": "Smaug AI Image Detector",
+        "short_name": "Smaug Detector",
         "architecture": "smaug",
+        "architecture_name": "EmbeddingGemma-2 (Smaug Multi-Crop Forensics)",
         "hf_repo": "https://huggingface.co/abacusai/Smaug-AI-Image-Detector",
         "description": "Abacus.AI Smaug Image Forensics Detector based on vision-optimized EmbeddingGemma-2.",
+        "domain_note": "Model is Abacus.AI Smaug Image Forensics Detector trained on modern photographic and synthetic generations.",
+        "badge": "Experimental",
     },
 }
 

@@ -21,12 +21,31 @@ def health_check():
 @router.get("/health/ai")
 def ai_health():
     ready, info = AIService.is_available()
+    try:
+        from src.detector import resolve_model_info, DEFAULT_MODEL_KEY, MODEL_REGISTRY
+        default_info = resolve_model_info(DEFAULT_MODEL_KEY)
+        model_id = default_info["model_id"]
+        architecture = default_info.get("architecture_name", default_info.get("architecture"))
+        available = [
+            {
+                "key": k,
+                "name": v.get("name"),
+                "model_id": v["model_id"],
+                "architecture": v.get("architecture_name", v.get("architecture")),
+            }
+            for k, v in MODEL_REGISTRY.items()
+        ]
+    except Exception:
+        model_id = "default_ai_detector"
+        architecture = "AI Transformer"
+        available = []
+
     return {
-        "model_id": "dima806/ai_vs_real_image_detection",
-        "architecture": "Vision Transformer (ViT-Base)",
+        "model_id": model_id,
+        "architecture": architecture,
         "ready": ready,
         "detail": info,
-        "dataset_scope": "CIFAKE (CIFAR-10 real + Stable Diffusion 1.4 synthetic)",
+        "available_models": available,
         "limitation_note": "Visual statistical resemblance model only; does not provide legal proof of authenticity.",
     }
 

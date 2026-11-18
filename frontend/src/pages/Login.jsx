@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../store/AuthContext';
-import { Shield, Eye, EyeOff, AlertCircle, Loader2 } from 'lucide-react';
+import { ShieldCheck, Eye, EyeOff, AlertCircle, Loader2, ArrowRight } from 'lucide-react';
 
 export default function Login() {
   const { login } = useAuth();
@@ -24,7 +24,7 @@ export default function Login() {
         ? detail
         : Array.isArray(detail)
           ? (detail[0]?.msg || 'Validation error')
-          : 'Login failed. Check your credentials.';
+          : 'Authentication failed. Please verify credentials.';
       setError(msg);
     } finally {
       setLoading(false);
@@ -34,58 +34,70 @@ export default function Login() {
   const fillDemo = (email, pass) => setForm({ email, password: pass });
 
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center px-4">
-      <div className="w-full max-w-md">
-        {/* Logo */}
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <Shield className="h-10 w-10 text-cyan-400" />
-            <span className="text-3xl font-bold text-white">
-              Truth<span className="text-cyan-400">Lens</span>
-            </span>
+    <div className="min-h-screen bg-dark-bg flex items-center justify-center p-4">
+      <div className="w-full max-w-md space-y-6">
+        {/* Brand Header */}
+        <div className="text-center space-y-2">
+          <div className="inline-flex items-center justify-center p-2 rounded-xl bg-brand-purple/10 border border-brand-purple/20 mb-1">
+            <ShieldCheck className="h-8 w-8 text-brand-purple-light" />
           </div>
-          <p className="text-slate-400 text-sm">AI-Powered Media Authenticity Verification</p>
+          <h1 className="text-2xl font-bold text-text-main tracking-tight">
+            Truth<span className="text-brand-purple-light">Lens</span> Forensics
+          </h1>
+          <p className="text-text-muted text-xs">
+            Digital media authenticity verification &amp; cryptographic provenance platform
+          </p>
         </div>
 
         {/* Card */}
-        <div className="bg-slate-800 border border-slate-700 rounded-2xl p-8 shadow-2xl">
-          <h2 className="text-xl font-semibold text-white mb-6">Sign In</h2>
+        <div className="bg-dark-card border border-dark-border rounded-lg p-6 sm:p-8 shadow-xs space-y-5">
+          <div>
+            <h2 className="text-base font-semibold text-text-main">Sign In</h2>
+            <p className="text-xs text-text-muted mt-0.5">Enter your credentials to access the forensics workspace</p>
+          </div>
 
           {error && (
-            <div className="flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-lg px-4 py-3 mb-5 text-red-400 text-sm">
-              <AlertCircle className="h-4 w-4 flex-shrink-0" />
-              {error}
+            <div className="flex items-center gap-2.5 bg-status-invalid/10 border border-status-invalid/20 rounded-lg p-3 text-status-invalid text-xs">
+              <AlertCircle className="h-4 w-4 shrink-0" />
+              <span>{error}</span>
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-slate-300 mb-1.5">Email</label>
+              <label className="block text-xs font-semibold text-text-main uppercase tracking-wider mb-1.5">
+                Email Address
+              </label>
               <input
                 type="email"
                 required
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-sm"
-                placeholder="you@example.com"
+                className="w-full bg-dark-sidebar border border-dark-border rounded-lg px-3.5 py-2.5 text-text-main placeholder-text-muted focus:outline-none focus:border-brand-purple text-xs sm:text-sm"
+                placeholder="analyst@organization.com"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-slate-300 mb-1.5">Password</label>
+              <div className="flex items-center justify-between mb-1.5">
+                <label className="block text-xs font-semibold text-text-main uppercase tracking-wider">
+                  Password
+                </label>
+              </div>
               <div className="relative">
                 <input
                   type={showPass ? 'text' : 'password'}
                   required
                   value={form.password}
                   onChange={(e) => setForm({ ...form, password: e.target.value })}
-                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2.5 pr-10 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-sm"
-                  placeholder="••••••••"
+                  className="w-full bg-dark-sidebar border border-dark-border rounded-lg px-3.5 py-2.5 pr-10 text-text-main placeholder-text-muted focus:outline-none focus:border-brand-purple text-xs sm:text-sm"
+                  placeholder="••••••••••••"
                 />
                 <button
                   type="button"
                   onClick={() => setShowPass(!showPass)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-text-main"
+                  tabIndex={-1}
                 >
                   {showPass ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                 </button>
@@ -95,26 +107,38 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-cyan-500 hover:bg-cyan-400 disabled:opacity-60 disabled:cursor-not-allowed text-slate-900 font-semibold rounded-lg px-4 py-2.5 flex items-center justify-center gap-2 transition-colors"
+              className="w-full bg-brand-purple hover:bg-brand-purple-light disabled:opacity-40 disabled:cursor-not-allowed text-white font-medium rounded-lg px-4 py-2.5 flex items-center justify-center gap-2 transition-all shadow-xs text-xs sm:text-sm"
             >
-              {loading && <Loader2 className="h-4 w-4 animate-spin" />}
-              {loading ? 'Signing in…' : 'Sign In'}
+              {loading ? (
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                  <span>Authenticating...</span>
+                </>
+              ) : (
+                <>
+                  <span>Sign In to Platform</span>
+                  <ArrowRight className="h-4 w-4" />
+                </>
+              )}
             </button>
           </form>
 
-          {/* Demo accounts */}
-          <div className="mt-6 pt-5 border-t border-slate-700">
-            <p className="text-xs text-slate-500 mb-3 font-medium uppercase tracking-wide">Demo Accounts</p>
+          {/* Quick Demo Credentials */}
+          <div className="pt-4 border-t border-dark-border space-y-2">
+            <span className="text-[11px] uppercase tracking-wider font-semibold text-text-muted block">
+              Quick Test Accounts
+            </span>
             <div className="grid grid-cols-3 gap-2">
               {[
                 { label: 'Admin', email: 'admin@truthlens.local', pass: 'AdminPass123!' },
                 { label: 'Publisher', email: 'publisher@truthlens.local', pass: 'PublisherPass123!' },
-                { label: 'User', email: 'user@truthlens.local', pass: 'UserPass123!' },
+                { label: 'Analyst', email: 'user@truthlens.local', pass: 'UserPass123!' },
               ].map((d) => (
                 <button
                   key={d.label}
+                  type="button"
                   onClick={() => fillDemo(d.email, d.pass)}
-                  className="text-xs bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg px-2 py-1.5 transition-colors"
+                  className="text-xs bg-dark-elevated hover:bg-dark-border text-text-muted hover:text-text-main rounded px-2 py-1.5 border border-dark-border transition-colors font-medium"
                 >
                   {d.label}
                 </button>
@@ -122,12 +146,14 @@ export default function Login() {
             </div>
           </div>
 
-          <p className="text-center text-sm text-slate-500 mt-5">
-            No account?{' '}
-            <Link to="/register" className="text-cyan-400 hover:text-cyan-300">
-              Register
-            </Link>
-          </p>
+          <div className="pt-1 text-center">
+            <p className="text-xs text-text-muted">
+              Don't have an authorized account?{' '}
+              <Link to="/register" className="text-brand-purple-light hover:underline font-medium">
+                Create Account
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,3 +1,9 @@
+"""
+scripts/test_verify_pipeline.py
+===============================
+Functional test script for authenticating and submitting a media verification
+request against the running local FastAPI backend (http://127.0.0.1:8000).
+"""
 import urllib.request
 import json
 

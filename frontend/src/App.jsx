@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './store/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
-import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
@@ -13,12 +13,7 @@ import AdminPanel from './pages/AdminPanel';
 import SystemStatus from './pages/SystemStatus';
 
 function Layout({ children }) {
-  return (
-    <div className="min-h-screen bg-slate-900">
-      <Navbar />
-      <main>{children}</main>
-    </div>
-  );
+  return <Sidebar>{children}</Sidebar>;
 }
 
 export default function App() {

@@ -46,6 +46,12 @@ secrets/
 .env.*.local
 *.env
 
+# Datasets & Large Media Assets
+data/cifake_dataset/
+data/cifake/
+data/evaluation_210/
+test/
+
 # Local Storage & Uploads
 uploads/
 temp_storage/

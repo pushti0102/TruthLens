@@ -1,0 +1,303 @@
+{
+  "timestamp": "2026-11-18 23:17:01",
+  "photographic_benchmark": {
+    "current": {
+      "model_key": "current",
+      "model_id": "dima806/ai_vs_real_image_detection",
+      "architecture": "vit",
+      "total_samples": 10,
+      "confusion_matrix": {
+        "TP": 5,
+        "FP": 5,
+        "TN": 0,
+        "FN": 0
+      },
+      "accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1_score": 0.6667,
+      "false_positive_rate": 1.0,
+      "results": [
+        {
+          "filename": "IMG_20221030_171218.jpg",
+          "path": "D:\\Photos\\CHAT PUJA\\chaat puja 2022\\IMG_20221030_171218.jpg",
+          "ground_truth": "REAL",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.7994,
+          "document_domain_warning": false,
+          "inference_ms": 3812.7,
+          "correct": false
+        },
+        {
+          "filename": "IMG_20221028_124337.jpg",
+          "path": "D:\\Photos\\CHAT PUJA\\chaat puja 2022\\IMG_20221028_124337.jpg",
+          "ground_truth": "REAL",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.9692,
+          "document_domain_warning": false,
+          "inference_ms": 595.1,
+          "correct": false
+        },
+        {
+          "filename": "IMG_20221028_124343.jpg",
+          "path": "D:\\Photos\\CHAT PUJA\\chaat puja 2022\\IMG_20221028_124343.jpg",
+          "ground_truth": "REAL",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.9852,
+          "document_domain_warning": false,
+          "inference_ms": 736.7,
+          "correct": false
+        },
+        {
+          "filename": "IMG_20221029_203122.jpg",
+          "path": "D:\\Photos\\CHAT PUJA\\chaat puja 2022\\IMG_20221029_203122.jpg",
+          "ground_truth": "REAL",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.9594,
+          "document_domain_warning": false,
+          "inference_ms": 1160.4,
+          "correct": false
+        },
+        {
+          "filename": "sample_photo.jpg",
+          "path": "D:\\projects\\ISC Project\\truthlens-ai\\data\\real\\sample_photo.jpg",
+          "ground_truth": "REAL",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.8209,
+          "document_domain_warning": false,
+          "inference_ms": 510.4,
+          "correct": false
+        },
+        {
+          "filename": "0 (10).jpg",
+          "path": "D:\\projects\\ISC Project\\test\\FAKE\\0 (10).jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.9974,
+          "document_domain_warning": false,
+          "inference_ms": 266.4,
+          "correct": true
+        },
+        {
+          "filename": "0 (2).jpg",
+          "path": "D:\\projects\\ISC Project\\test\\FAKE\\0 (2).jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.9952,
+          "document_domain_warning": false,
+          "inference_ms": 617.0,
+          "correct": true
+        },
+        {
+          "filename": "0 (3).jpg",
+          "path": "D:\\projects\\ISC Project\\test\\FAKE\\0 (3).jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.9985,
+          "document_domain_warning": false,
+          "inference_ms": 436.2,
+          "correct": true
+        },
+        {
+          "filename": "0 (4).jpg",
+          "path": "D:\\projects\\ISC Project\\test\\FAKE\\0 (4).jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.9988,
+          "document_domain_warning": false,
+          "inference_ms": 264.2,
+          "correct": true
+        },
+        {
+          "filename": "sample_synth.jpg",
+          "path": "D:\\projects\\ISC Project\\truthlens-ai\\data\\ai_generated\\sample_synth.jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.7934,
+          "document_domain_warning": false,
+          "inference_ms": 493.2,
+          "correct": true
+        }
+      ]
+    },
+    "smaug": {
+      "model_key": "smaug",
+      "model_id": "abacusai/Smaug-AI-Image-Detector",
+      "architecture": "smaug",
+      "total_samples": 10,
+      "confusion_matrix": {
+        "TP": 2,
+        "FP": 1,
+        "TN": 4,
+        "FN": 3
+      },
+      "accuracy": 0.6,
+      "precision": 0.6667,
+      "recall": 0.4,
+      "f1_score": 0.5,
+      "false_positive_rate": 0.2,
+      "results": [
+        {
+          "filename": "IMG_20221030_171218.jpg",
+          "path": "D:\\Photos\\CHAT PUJA\\chaat puja 2022\\IMG_20221030_171218.jpg",
+          "ground_truth": "REAL",
+          "prediction": "REAL",
+          "confidence": 0.9932,
+          "document_domain_warning": false,
+          "inference_ms": 24143.6,
+          "correct": true
+        },
+        {
+          "filename": "IMG_20221028_124337.jpg",
+          "path": "D:\\Photos\\CHAT PUJA\\chaat puja 2022\\IMG_20221028_124337.jpg",
+          "ground_truth": "REAL",
+          "prediction": "REAL",
+          "confidence": 0.9997,
+          "document_domain_warning": false,
+          "inference_ms": 2265.9,
+          "correct": true
+        },
+        {
+          "filename": "IMG_20221028_124343.jpg",
+          "path": "D:\\Photos\\CHAT PUJA\\chaat puja 2022\\IMG_20221028_124343.jpg",
+          "ground_truth": "REAL",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.9963,
+          "document_domain_warning": false,
+          "inference_ms": 2059.6,
+          "correct": false
+        },
+        {
+          "filename": "IMG_20221029_203122.jpg",
+          "path": "D:\\Photos\\CHAT PUJA\\chaat puja 2022\\IMG_20221029_203122.jpg",
+          "ground_truth": "REAL",
+          "prediction": "REAL",
+          "confidence": 0.9999,
+          "document_domain_warning": false,
+          "inference_ms": 2037.7,
+          "correct": true
+        },
+        {
+          "filename": "sample_photo.jpg",
+          "path": "D:\\projects\\ISC Project\\truthlens-ai\\data\\real\\sample_photo.jpg",
+          "ground_truth": "REAL",
+          "prediction": "REAL",
+          "confidence": 0.7721,
+          "document_domain_warning": false,
+          "inference_ms": 1802.3,
+          "correct": true
+        },
+        {
+          "filename": "0 (10).jpg",
+          "path": "D:\\projects\\ISC Project\\test\\FAKE\\0 (10).jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.864,
+          "document_domain_warning": false,
+          "inference_ms": 1912.1,
+          "correct": true
+        },
+        {
+          "filename": "0 (2).jpg",
+          "path": "D:\\projects\\ISC Project\\test\\FAKE\\0 (2).jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "REAL",
+          "confidence": 0.5296,
+          "document_domain_warning": false,
+          "inference_ms": 1700.1,
+          "correct": false
+        },
+        {
+          "filename": "0 (3).jpg",
+          "path": "D:\\projects\\ISC Project\\test\\FAKE\\0 (3).jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "REAL",
+          "confidence": 0.726,
+          "document_domain_warning": false,
+          "inference_ms": 2208.1,
+          "correct": false
+        },
+        {
+          "filename": "0 (4).jpg",
+          "path": "D:\\projects\\ISC Project\\test\\FAKE\\0 (4).jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.992,
+          "document_domain_warning": false,
+          "inference_ms": 1804.8,
+          "correct": true
+        },
+        {
+          "filename": "sample_synth.jpg",
+          "path": "D:\\projects\\ISC Project\\truthlens-ai\\data\\ai_generated\\sample_synth.jpg",
+          "ground_truth": "AI_GENERATED",
+          "prediction": "REAL",
+          "confidence": 0.8386,
+          "document_domain_warning": false,
+          "inference_ms": 1836.2,
+          "correct": false
+        }
+      ]
+    }
+  },
+  "document_benchmark": {
+    "current": {
+      "model_key": "current",
+      "model_id": "dima806/ai_vs_real_image_detection",
+      "architecture": "vit",
+      "total_samples": 1,
+      "confusion_matrix": {
+        "TP": 0,
+        "FP": 1,
+        "TN": 0,
+        "FN": 0
+      },
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "false_positive_rate": 1.0,
+      "results": [
+        {
+          "filename": "test_document_id.jpg",
+          "path": "D:\\projects\\ISC Project\\data\\test_document_id.jpg",
+          "ground_truth": "REAL",
+          "prediction": "AI_GENERATED",
+          "confidence": 0.8367,
+          "document_domain_warning": true,
+          "inference_ms": 172.2,
+          "correct": false
+        }
+      ]
+    },
+    "smaug": {
+      "model_key": "smaug",
+      "model_id": "abacusai/Smaug-AI-Image-Detector",
+      "architecture": "smaug",
+      "total_samples": 1,
+      "confusion_matrix": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 1,
+        "FN": 0
+      },
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "false_positive_rate": 0.0,
+      "results": [
+        {
+          "filename": "test_document_id.jpg",
+          "path": "D:\\projects\\ISC Project\\data\\test_document_id.jpg",
+          "ground_truth": "REAL",
+          "prediction": "REAL",
+          "confidence": 0.9681,
+          "document_domain_warning": true,
+          "inference_ms": 1897.6,
+          "correct": true
+        }
+      ]
+    }
+  }
+}

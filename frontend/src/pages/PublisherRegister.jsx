@@ -1,6 +1,17 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import api from '../services/api';
-import { Upload, Lock, CheckCircle, AlertCircle, Loader2, Copy } from 'lucide-react';
+import {
+  UploadCloud,
+  Lock,
+  CheckCircle2,
+  AlertCircle,
+  Loader2,
+  Copy,
+  Check,
+  FileKey,
+  ShieldCheck,
+  XCircle
+} from 'lucide-react';
 
 export default function PublisherRegister() {
   const [file, setFile] = useState(null);
@@ -9,9 +20,11 @@ export default function PublisherRegister() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
-  const [copied, setCopied] = useState('');
+  const [copiedKey, setCopiedKey] = useState('');
+  const [dragging, setDragging] = useState(false);
 
   const handleFile = (f) => {
+    if (!f) return;
     setFile(f);
     setResult(null);
     setError('');
@@ -19,6 +32,20 @@ export default function PublisherRegister() {
     reader.onload = (e) => setPreview(e.target.result);
     reader.readAsDataURL(f);
   };
+
+  const clearFile = (e) => {
+    e.stopPropagation();
+    setFile(null);
+    setPreview(null);
+    setResult(null);
+  };
+
+  const onDrop = useCallback((e) => {
+    e.preventDefault();
+    setDragging(false);
+    const f = e.dataTransfer.files[0];
+    if (f) handleFile(f);
+  }, []);
 
   const handleRegister = async () => {
     if (!file) return;
@@ -29,12 +56,18 @@ export default function PublisherRegister() {
     formData.append('file', file);
     if (title) formData.append('title', title);
     try {
-      const res = await api.post('/api/publishers/register-media', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      });
+      const res = await api.post('/api/publishers/register-media', formData);
       setResult(res.data);
     } catch (err) {
-      setError(err.response?.data?.detail || 'Registration failed.');
+      console.error('Registration error:', err);
+      let errMsg = 'Registration failed.';
+      if (err.response?.data?.detail) {
+        const detail = err.response.data.detail;
+        errMsg = typeof detail === 'string' ? detail : (detail.message || JSON.stringify(detail));
+      } else if (err.message) {
+        errMsg = err.message;
+      }
+      setError(errMsg);
     } finally {
       setLoading(false);
     }
@@ -42,96 +75,139 @@ export default function PublisherRegister() {
 
   const copy = (text, key) => {
     navigator.clipboard.writeText(text);
-    setCopied(key);
-    setTimeout(() => setCopied(''), 2000);
+    setCopiedKey(key);
+    setTimeout(() => setCopiedKey(''), 2000);
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8 space-y-6">
+    <div className="max-w-3xl mx-auto p-6 md:p-8 lg:p-10 space-y-6">
+      {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold text-white">Register Media</h1>
-        <p className="text-slate-400 text-sm mt-1">Cryptographically sign and register your media for provenance tracking</p>
+        <div className="flex items-center gap-2">
+          <FileKey className="h-6 w-6 text-brand-purple-light" />
+          <h1 className="text-xl md:text-2xl font-bold text-text-main tracking-tight">
+            Publisher Registry & Signing
+          </h1>
+        </div>
+        <p className="text-text-muted text-xs sm:text-sm mt-1">
+          Cryptographically sign digital media assets with your organization's ECDSA private key and record provenance on TruthLens.
+        </p>
       </div>
 
-      <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 space-y-4">
-        {/* File upload */}
+      <div className="bg-dark-card border border-dark-border rounded-lg p-6 space-y-5 shadow-xs">
+        {/* Drag & Drop Upload */}
         <div
+          onDragOver={(e) => { e.preventDefault(); setDragging(true); }}
+          onDragLeave={() => setDragging(false)}
+          onDrop={onDrop}
           onClick={() => document.getElementById('pub-file').click()}
-          className="border-2 border-dashed border-slate-600 hover:border-cyan-500 rounded-xl p-8 text-center cursor-pointer transition-colors"
+          className={`border border-dashed rounded-lg p-6 sm:p-8 text-center cursor-pointer transition-all ${
+            dragging
+              ? 'border-brand-purple bg-brand-purple/5'
+              : 'border-dark-border bg-dark-sidebar/40 hover:border-brand-purple/60 hover:bg-dark-elevated/40'
+          }`}
         >
           <input
             id="pub-file"
             type="file"
-            accept="image/*"
+            accept="image/png, image/jpeg, image/jpg, image/webp"
             className="hidden"
             onChange={(e) => handleFile(e.target.files[0])}
           />
           {preview ? (
-            <div className="space-y-2">
-              <img src={preview} alt="preview" className="max-h-32 mx-auto rounded-lg" />
-              <p className="text-slate-300 text-sm">{file.name}</p>
+            <div className="space-y-3">
+              <div className="relative inline-block">
+                <img src={preview} alt="preview" className="max-h-48 mx-auto rounded border border-dark-border" />
+                <button
+                  onClick={clearFile}
+                  className="absolute top-1 right-1 p-1 rounded-full bg-dark-sidebar text-text-muted hover:text-status-invalid border border-dark-border"
+                >
+                  <XCircle className="h-4 w-4" />
+                </button>
+              </div>
+              <p className="text-text-main text-xs font-mono font-medium">{file.name}</p>
             </div>
           ) : (
-            <div className="space-y-2">
-              <Upload className="h-10 w-10 text-slate-500 mx-auto" />
-              <p className="text-slate-400 text-sm">Click to select media file</p>
+            <div className="space-y-2 py-4">
+              <UploadCloud className="h-8 w-8 text-brand-purple-light mx-auto" />
+              <p className="text-text-main text-sm font-medium">Click to select or drop authoritative media</p>
+              <p className="text-text-muted text-xs">Supports PNG, JPG, JPEG, WEBP</p>
             </div>
           )}
         </div>
 
-        {/* Title field */}
+        {/* Title / Reference Label */}
         <div>
-          <label className="block text-sm font-medium text-slate-300 mb-1.5">Title (optional)</label>
+          <label className="block text-xs font-semibold text-text-main uppercase tracking-wider mb-1.5">
+            Asset Title or Reference Label
+          </label>
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="e.g. Press Release Photo — Nov 2026"
-            className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-sm"
+            placeholder="e.g. Official Executive Portrait — Nov 2026"
+            className="w-full bg-dark-sidebar border border-dark-border rounded-lg px-3.5 py-2.5 text-text-main placeholder-text-muted focus:outline-none focus:border-brand-purple text-xs sm:text-sm"
           />
         </div>
 
         {error && (
-          <div className="flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-lg px-4 py-3 text-red-400 text-sm">
-            <AlertCircle className="h-4 w-4" /> {error}
+          <div className="flex items-center gap-2 bg-status-invalid/10 border border-status-invalid/20 rounded-lg p-3 text-status-invalid text-xs">
+            <AlertCircle className="h-4 w-4 shrink-0" />
+            <span>{error}</span>
           </div>
         )}
 
         <button
           onClick={handleRegister}
           disabled={!file || loading}
-          className="w-full bg-cyan-500 hover:bg-cyan-400 disabled:opacity-50 text-slate-900 font-semibold rounded-xl py-3 flex items-center justify-center gap-2 transition-colors"
+          className="w-full bg-brand-purple hover:bg-brand-purple-light disabled:opacity-40 disabled:cursor-not-allowed text-white font-medium rounded-lg py-2.5 flex items-center justify-center gap-2 transition-all shadow-xs text-xs sm:text-sm"
         >
-          {loading ? <><Loader2 className="h-5 w-5 animate-spin" /> Registering…</> : <><Lock className="h-5 w-5" /> Register &amp; Sign</>}
+          {loading ? (
+            <>
+              <Loader2 className="h-4 w-4 animate-spin" />
+              <span>Generating ECDSA Digital Signature & Registering...</span>
+            </>
+          ) : (
+            <>
+              <Lock className="h-4 w-4" />
+              <span>Register &amp; Cryptographically Sign Asset</span>
+            </>
+          )}
         </button>
       </div>
 
-      {/* Success result */}
+      {/* Success Result Card */}
       {result && (
-        <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 space-y-4">
-          <div className="flex items-center gap-2 text-green-400">
-            <CheckCircle className="h-6 w-6" />
-            <span className="font-semibold">Media Successfully Registered</span>
+        <div className="bg-status-genuine/10 border border-status-genuine/20 rounded-lg p-5 space-y-4 shadow-xs">
+          <div className="flex items-center gap-2 text-status-genuine">
+            <CheckCircle2 className="h-5 w-5 shrink-0" />
+            <span className="font-semibold text-sm">Media Asset Authenticated & Registered</span>
           </div>
 
-          {[
-            { key: 'asset_id', label: 'Asset ID', value: result.asset_id },
-            { key: 'sha256', label: 'SHA-256 Hash', value: result.sha256_hash },
-            { key: 'sig', label: 'ECDSA Signature', value: result.signature },
-          ].map(({ key, label, value }) => value && (
-            <div key={key} className="bg-slate-800/70 rounded-lg p-3">
-              <div className="flex items-center justify-between mb-1">
-                <span className="text-xs text-slate-400 font-medium">{label}</span>
-                <button onClick={() => copy(value, key)} className="text-xs text-cyan-400 hover:text-cyan-300 flex items-center gap-1">
-                  <Copy className="h-3 w-3" />{copied === key ? 'Copied!' : 'Copy'}
-                </button>
+          <div className="space-y-3">
+            {[
+              { key: 'asset_id', label: 'Canonical Asset ID', value: result.asset_id },
+              { key: 'sha256', label: 'FIPS 180-4 SHA-256 Digest', value: result.sha256_hash },
+              { key: 'sig', label: 'ECDSA SECP256R1 Signature', value: result.signature },
+            ].map(({ key, label, value }) => value && (
+              <div key={key} className="bg-dark-card border border-dark-border rounded p-3">
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-[11px] text-text-muted font-medium uppercase tracking-wider">{label}</span>
+                  <button
+                    onClick={() => copy(value, key)}
+                    className="text-xs text-brand-purple-light hover:underline inline-flex items-center gap-1"
+                  >
+                    {copiedKey === key ? <Check className="h-3 w-3 text-status-genuine" /> : <Copy className="h-3 w-3" />}
+                    <span>{copiedKey === key ? 'Copied' : 'Copy'}</span>
+                  </button>
+                </div>
+                <p className="text-xs text-brand-purple-light font-mono break-all">{value}</p>
               </div>
-              <p className="text-xs text-cyan-300 font-mono break-all">{value}</p>
-            </div>
-          ))}
+            ))}
+          </div>
 
-          <p className="text-slate-500 text-xs">
-            Registered at {result.registered_at ? new Date(result.registered_at).toLocaleString() : 'now'}
+          <p className="text-text-muted text-[11px]">
+            Registered at {result.registered_at ? new Date(result.registered_at).toLocaleString() : 'Just now'}
           </p>
         </div>
       )}
