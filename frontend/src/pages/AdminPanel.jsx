@@ -65,7 +65,7 @@ export default function AdminPanel() {
   const filteredLogs = logs.filter((l) =>
     !logFilter ||
     l.event_type?.toLowerCase().includes(logFilter.toLowerCase()) ||
-    l.actor_email?.toLowerCase().includes(logFilter.toLowerCase()) ||
+    (l.user_email || l.actor_email || '')?.toLowerCase().includes(logFilter.toLowerCase()) ||
     l.ip_address?.toLowerCase().includes(logFilter.toLowerCase())
   );
 
@@ -222,30 +222,39 @@ export default function AdminPanel() {
                       </td>
                     </tr>
                   ) : (
-                    filteredLogs.map((l) => (
-                      <tr key={l.id} className="hover:bg-dark-elevated/40 transition-colors">
-                        <td className="px-4 py-3 font-mono text-brand-purple-light text-xs font-medium">
-                          {l.event_type}
-                        </td>
-                        <td className="px-4 py-3 text-text-muted text-xs truncate max-w-[160px]">
-                          {l.actor_email || l.actor_id || 'System Anonymous'}
-                        </td>
-                        <td className="px-4 py-3 text-text-muted font-mono text-xs">{l.ip_address || '127.0.0.1'}</td>
-                        <td className="px-4 py-3 text-text-muted text-xs">
-                          {new Date(l.created_at).toLocaleString()}
-                        </td>
-                        <td className="px-4 py-3 text-right">
-                          <span className={`inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded font-medium ${
-                            l.success
-                              ? 'text-status-genuine bg-status-genuine/10 border border-status-genuine/20'
-                              : 'text-status-invalid bg-status-invalid/10 border border-status-invalid/20'
-                          }`}>
-                            {l.success ? <CheckCircle2 className="h-3 w-3" /> : <XCircle className="h-3 w-3" />}
-                            <span>{l.success ? 'Success' : 'Denied'}</span>
-                          </span>
-                        </td>
-                      </tr>
-                    ))
+                    filteredLogs.map((l) => {
+                      const isSuccess = l.status === 'SUCCESS' || l.success === true;
+                      const formattedTime = l.timestamp
+                        ? l.timestamp
+                        : l.created_at
+                        ? new Date(l.created_at).toLocaleString()
+                        : '—';
+
+                      return (
+                        <tr key={l.id} className="hover:bg-dark-elevated/40 transition-colors">
+                          <td className="px-4 py-3 font-mono text-brand-purple-light text-xs font-medium">
+                            {l.event_type}
+                          </td>
+                          <td className="px-4 py-3 text-text-muted text-xs truncate max-w-[160px]">
+                            {l.user_email || l.actor_email || l.actor_id || 'System Anonymous'}
+                          </td>
+                          <td className="px-4 py-3 text-text-muted font-mono text-xs">{l.ip_address || '127.0.0.1'}</td>
+                          <td className="px-4 py-3 text-text-muted text-xs">
+                            {formattedTime}
+                          </td>
+                          <td className="px-4 py-3 text-right">
+                            <span className={`inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded font-medium ${
+                              isSuccess
+                                ? 'text-status-genuine bg-status-genuine/10 border border-status-genuine/20'
+                                : 'text-status-invalid bg-status-invalid/10 border border-status-invalid/20'
+                            }`}>
+                              {isSuccess ? <CheckCircle2 className="h-3 w-3" /> : <XCircle className="h-3 w-3" />}
+                              <span>{isSuccess ? 'Success' : 'Denied'}</span>
+                            </span>
+                          </td>
+                        </tr>
+                      );
+                    })
                   )}
                 </tbody>
               </table>
