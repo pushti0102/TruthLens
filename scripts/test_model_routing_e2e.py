@@ -28,9 +28,10 @@ from backend.app.models.verification import VerificationRecord
 
 def run_tests():
     client = TestClient(app)
-    test_img_path = PROJECT_ROOT / "data" / "evaluation_210" / "real_photographs" / "real_001_IMG_20221030_171218.jpg"
+    # Use reliably tracked sample photo
+    test_img_path = PROJECT_ROOT / "demo_samples" / "real_dog_photo.jpg"
     if not test_img_path.exists():
-        test_img_path = Path(r"D:\Photos\CHAT PUJA\chaat puja 2022\IMG_20221030_171218.jpg")
+        test_img_path = PROJECT_ROOT / "truthlens-ai" / "data" / "real" / "sample_photo.jpg"
 
     with open(test_img_path, "rb") as f:
         img_bytes = f.read()

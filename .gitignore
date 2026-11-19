@@ -57,6 +57,7 @@ uploads/
 temp_storage/
 test_output/
 *.log
+data/test_model_routing_response_*.json
 storage/verified_assets/*
 !storage/verified_assets/.gitkeep
 

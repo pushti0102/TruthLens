@@ -47,17 +47,18 @@ def generate_test_document(output_path: Path) -> Path:
 
 def get_dataset():
     """Build the evaluation dataset containing photographic images and separate documents."""
-    photos_dir = Path(r"D:\Photos\CHAT PUJA\chaat puja 2022")
-    cifake_dir = PROJECT_ROOT / "test" / "FAKE"
+    cifake_dir = PROJECT_ROOT / "data" / "cifake_dataset" / "FAKE"
+    if not cifake_dir.exists():
+        cifake_dir = PROJECT_ROOT / "test" / "FAKE"
+
+    demo_dir = PROJECT_ROOT / "demo_samples"
     sample_real = AI_DIR / "data" / "real" / "sample_photo.jpg"
     sample_synth = AI_DIR / "data" / "ai_generated" / "sample_synth.jpg"
 
-    # 1. Real photographic images (known natural smartphone photos)
+    # 1. Real photographic images (known natural camera & smartphone photos)
     real_photos = [
-        photos_dir / "IMG_20221030_171218.jpg",
-        photos_dir / "IMG_20221028_124337.jpg",
-        photos_dir / "IMG_20221028_124343.jpg",
-        photos_dir / "IMG_20221029_203122.jpg",
+        demo_dir / "real_dog_photo.jpg",
+        demo_dir / "original_demo.png",
         sample_real,
     ]
     # Filter to only existing files
@@ -65,12 +66,12 @@ def get_dataset():
 
     # 2. Synthetic AI images (known AI generated)
     synth_images = [
-        cifake_dir / "0 (10).jpg",
-        cifake_dir / "0 (2).jpg",
-        cifake_dir / "0 (3).jpg",
-        cifake_dir / "0 (4).jpg",
+        demo_dir / "ai_generated_anime.png",
         sample_synth,
     ]
+    if cifake_dir.exists():
+        synth_images.extend(list(cifake_dir.glob("*.jpg"))[:5])
+
     existing_synth = [p for p in synth_images if p.exists()]
 
     photo_dataset = []
